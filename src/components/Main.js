@@ -1,11 +1,11 @@
-import { Route, Swtich } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Index from "../pages/Index";
 import Show from "../pages/Show";
 
 function Main(props){
     return (
     <div>
-        <Swtich>
+        <Switch>
             <Route exact path="/">
                 <Index />
             </Route>
@@ -17,7 +17,7 @@ function Main(props){
                     />
                 )}
             />
-        </Swtich> 
+        </Switch> 
     </div>)
 }
 
