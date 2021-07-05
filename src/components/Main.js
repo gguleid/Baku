@@ -8,14 +8,14 @@ function Main(props){
 
     const URL ="https://dry-savannah-59356.herokuapp.com/";
 
-    getProducts = async () => {
+    const getProducts = async () => {
         const response = await fetch(URL);
         const data = await response.json();
         setProducts(data);
     };
 
-    createProducts = async (product) => {
-        const response = await fetch(URL, {
+    const createProducts = async (product) => {
+        await fetch(URL, {
             method: "POST",
             headers: {
                 "Content-Type": "Application/json",
