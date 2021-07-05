@@ -1,5 +1,5 @@
 function Index(props){
-    return <h1>Index</h1>
+    return <h1>Our Products</h1>
 }
 
 export default Index;
