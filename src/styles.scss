@@ -1,7 +1,9 @@
+@import url('https://fonts.googeapis.com/css2?family=ABeeZee:wght@100,200,300') ;
+
 // --------------------------
 // VARIABLES
 // --------------------------
-$maincolor: white;
+$maincolor: #ffffff;
 $contrastcolor: #ff8ea1;
 
 @mixin white-text-black-bg {
@@ -15,6 +17,19 @@ $contrastcolor: #ff8ea1;
 }
 
 // --------------------------
+// Body
+// --------------------------
+body {
+  font-family: Helvetica;
+  margin: 0;
+  background-color: #ff8ea1;
+  text-decoration: none;
+  font-family: ABeeZee, serif;
+    a {
+      text-decoration: none;
+    }
+}
+// --------------------------
 // Header
 // --------------------------
 
@@ -25,10 +40,37 @@ nav {
 
   a {
     @include white-text-black-bg;
-
+    text-decoration: none;
     div {
       margin: 10px;
       font-size: large;
     }
   }
+}
+
+
+// --------------------------
+// Images
+// --------------------------
+
+.item {
+  text-decoration: none;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 2000px;
+  margin: auto;
+  border-radius: 10%;
+  
+  .about{ 
+    border-bottom: 15px solid #ff8ea1;
+    ;
+  }
+}
+
+
+.products {
+  
+  padding-top: 15px;
 }
