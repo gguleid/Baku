@@ -1,3 +1,39 @@
+# Baku Beverage 
+A MERN Stack application designed for a start-up beverage company.
+
+## Technologies
+
+-HTML5
+
+-CSS3
+
+-JavaScript
+
+-MongoDB/Mongoose
+
+-Express
+
+-React
+
+-Node.js
+
+
+## User Stories
+
+* As a user, I would like to have admin access to update products 
+
+* As a user, I would like to add products to a to a shopping cart
+
+* As a user, I would like to see which stores in my area have Baku products
+
+
+
+
+
+
+
+
+_________________________________________
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

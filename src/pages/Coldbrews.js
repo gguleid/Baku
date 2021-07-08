@@ -29,15 +29,19 @@ function Coldbrews(props) {
         return (
             <section>
                 {props.products.map((item) => (
-                    <div key={item._id} className="item">
-                        <Link to={`/products/${item._id}`}>
-                            <h1>{item.name}</h1>
-                        </Link>
-                        <div className='coldbrew-pics'>
-                        { item.image && <img src={item.image} alt={item.name} width="400" height="520" /> }
+                    <div className="card">
+                        <div key={item._id} className="item">
+                            <Link to={`/products/${item._id}`}>
+                                <h1>{item.name}</h1>
+                            </Link>
+                            <div className='coldbrew-pics'>
+                            { item.image && <img src={item.image} alt={item.name} width="400" height="520" /> }
+                            <h3>{item.description}</h3>
+                            </div>
+                            <div className='content-box'>
+                            { item.price > 0 && <h4>Price: ${item.price}</h4>}
+                            </div>
                         </div>
-                        { item.price > 0 && <h4>Price: ${item.price}</h4>}
-                        <h3>{item.description}</h3>
                     </div>
                 ))}
             </section>
@@ -50,7 +54,7 @@ function Coldbrews(props) {
     
     return (
         <section style={{ display: 'flex', justifyContent: 'space-evenly'}}>
-            <form style={{marginTop: '5rem'}} onSubmit={handleSubmit}>
+            <form style={{marginTop: '4rem'}} onSubmit={handleSubmit}>
             <h4>New Drinks</h4>
                 <input 
                     type="text"

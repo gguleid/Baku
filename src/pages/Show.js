@@ -27,14 +27,16 @@ function Show({ match, history, products, updateProduct, deleteProduct }){
     
     const loaded = () => {
         return (
-            <div>
+            <div className="show">
                 <h1>{item.name}</h1>
                 <div className="image">
                     <img src={item.image} alt={item.name} width="400" height="520" />
                 </div>
-                <button onClick={()=> handleDelete(item._id)}>Delete {item.name}</button>
-                <h5>Price ${item.price}</h5>
+                <div className="show-card">
                 <h3>{item.description}</h3>
+                <h5>Price ${item.price}</h5>
+                </div>
+                <button onClick={()=> handleDelete(item._id)}>Delete {item.name}</button>
             </div>);
         }
 
@@ -58,7 +60,9 @@ function Show({ match, history, products, updateProduct, deleteProduct }){
     return  (
         <div>
             {item ? loaded() : loading()}
-            <form onSubmit={handleSubmit}> 
+            <section  className="edit" >
+            <form style={{marginTop: '4rem'}} onSubmit={handleSubmit} > 
+                <h3>Edit Drink</h3>
                 <input 
                     type="text" 
                     name="name" 
@@ -89,9 +93,10 @@ function Show({ match, history, products, updateProduct, deleteProduct }){
                 />
                 <input 
                     type="submit" 
-                    value="Edit Person"
+                    value="Edit Drink"
                 />
             </form>
+            </section>
         </div>
         )
 }

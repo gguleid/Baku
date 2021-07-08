@@ -13,7 +13,6 @@ return (
         </div>
         <Link to="/products/coldbrews">
             <div className="cold-brews">
-                <h4>Cold Brews</h4>
                 <img src="./Products.PNG" alt="Cold Brew" />
             </div>
         </Link>

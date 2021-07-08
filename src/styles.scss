@@ -24,6 +24,7 @@ body {
   margin: 0;
   background-color: #ff8ea1;
   text-decoration: none;
+  font-size: 30px;
   font-family: ABeeZee, serif;
     a {
       text-decoration: none;
@@ -52,20 +53,79 @@ nav {
 // --------------------------
 // Images
 // --------------------------
+.card {
+  display: flex;
+  background-color: #ee2345;
+  border: 1px solid #ff8ea1;
+  width: 900px;
+  margin: 10px 10px;
+  padding: 30px 50px;
 
 .item {
   text-decoration: none;
+  h1 {
+    padding-left:35%;
+    font-family: Helvetica;
+    color:#ffffff
+  }
+}
+.coldbrew-pics {
+  display: flex;
+  flex-direction: row;
+  border-radius: 15%;
+  h3 {
+    align-items: center;
+    justify-content: center;
+    padding: 20px 25px;
+    width: 500px
+  }
+}
+.content-box {
+  
+  
+  color:black;
+  padding-left: 45%;
 }
 
+}
+
+form {
+  background-color: white;
+  width: 15%;
+  height: 45%;
+  padding-bottom: 25px;
+  border: 2px solid #ff8ea1;
+}
+.edit {
+  color:red;
+  display: flex; 
+  input {
+    display: flex;
+    max-width: 18rem;
+    flex-direction: column;
+    margin: auto;
+  }
+
+}
 .container {
   background-color: #ffffff;
   width: 2000px;
   margin: auto;
   border-radius: 10%;
+  padding-bottom: 10%;
   
   .about{ 
     border-bottom: 15px solid #ff8ea1;
-    ;
+    
+  }
+}
+
+.show {
+  color: #ffffff;
+  width: 900px;
+  margin: auto;
+  .show-card {
+    color:#ffffff;
   }
 }
 
