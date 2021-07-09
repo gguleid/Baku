@@ -36,7 +36,7 @@ function Show({ match, history, products, updateProduct, deleteProduct }){
                 <h3>{item.description}</h3>
                 <h5>Price ${item.price}</h5>
                 </div>
-                <button onClick={()=> handleDelete(item._id)}>Delete {item.name}</button>
+                {/* <button onClick={()=> handleDelete(item._id)}>Delete {item.name}</button> */}
             </div>);
         }
 
