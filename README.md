@@ -43,6 +43,8 @@ A MERN Stack application designed for a start-up beverage company.
 
 - [Heroku](https://dry-savannah-59356.herokuapp.com/products/)
 
+-[Baku](https://trusting-wiles-4df063.netlify.app/)
+
 ## Future Enhancements
 - Add shopping cart functionality
 - Show a map of stores that currently carry product
