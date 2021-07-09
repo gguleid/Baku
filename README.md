@@ -1,7 +1,10 @@
 # Baku Beverage 
 A MERN Stack application designed for a start-up beverage company.
 
+
+
 ## Technologies
+----
 
 -HTML5
 
@@ -27,13 +30,28 @@ A MERN Stack application designed for a start-up beverage company.
 * As a user, I would like to see which stores in my area have Baku products
 
 
+<br/>
+<br/>
 
 
 
 
 
+# Getting Started
 
-_________________________________________
+- [Trello](https://trello.com/b/WZMu1Fxu/project-3-baku)
+
+- [Heroku](https://dry-savannah-59356.herokuapp.com/products/)
+
+## Future Enhancements
+- Add shopping cart functionality
+- Show a map of stores that currently carry product
+- Admin access to update products
+
+<br/>
+
+
+________________________________________
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
